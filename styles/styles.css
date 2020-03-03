@@ -25,10 +25,12 @@ a{
    font-weight: bold;
 }
 
-.content{
+.section2 .content{
    font-family: 'Poppins';
+   font-weight: 400;
    color: rgb(204, 204, 204) ;
    font-size: 0.7rem;
+   padding-top: 15px;
 }
 
 .titles{
@@ -124,7 +126,7 @@ main .sub-header{
 }
 
 .about-content{
-   width: 40%;
+   width: 45%;
    
 }
 
@@ -150,19 +152,18 @@ main .sub-header{
    width: 100%;
    height: 100%;
    border:red solid 2px;
-   flex-basis: auto;
+
+
 }
 
-.amenities-image{
-   width: 100%;
+.section2-img{
+   background-image: url(../sunshineAssets/home-3.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+flex: 0 0 33%;
+height: auto;
 }
 
-.section2 img{
-   width: 100%;
-   height: 100%;
-   flex-basis: auto;
-   
-} 
 
 .package{
    padding-top:100px;
@@ -173,18 +174,17 @@ main .sub-header{
    margin-left:133px
 }
 
-.package.two{
-   margin-right: 59px;
-   margin-left: 48px;
-}
-
 .package.one,
 .package.two{
-   width: 35%;
+   padding-bottom:100px;
+   padding-top:100px;
+
 }
 
+
 .package .content{
-   width: 90%;
+   width: 50%;
+   text-transform: capitalize;
    line-height: 20px;
 }
 
@@ -204,6 +204,68 @@ main .sub-header{
    margin-top:20px;
    font-size: 0.9rem;
 }  
+
+/**/
+
+.gallery{
+   background-image: url(../sunshineAssets/pattern.png);
+}
+
+.testimonials-parent{
+   padding-top:100px;
+
+}
+
+.testimonials-child{
+   margin:0 auto;
+   width:50%;
+   text-align:center;
+   background-color: white;
+   padding: 40px 50px;
+   width: 68%;
+height: 378px;
+padding-top: 65px;
+   
+}
+
+.testimonials-child .sub-header{
+   margin-bottom:28px;
+}
+
+.testimonials-child h2{
+   margin-bottom:35px
+}
+
+.review{
+   font-style: italic;
+   font-size: 1rem;
+   line-height: 24px;
+   margin-bottom: 15px;
+   font-family: 'Playfair Display';
+   padding: 0 50px;
+}
+
+.testimonials-parent i{
+   color: gold;
+   margin-bottom: 20px;
+}
+
+.testimonials-child .content{
+   font-family: 'Poppins';
+   font-size: 0.7rem;
+}
+
+.grey{
+   color: rgb(204, 204, 204) ;
+   font-weight: 400;
+   font-size: 0.7rem;
+}
+
+
+
+.gallery h2{
+   font-size: 2.8rem;
+}
 
 
 
