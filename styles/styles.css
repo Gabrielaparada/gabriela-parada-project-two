@@ -82,8 +82,36 @@ span{
 /*Header & Nav */
 
 nav{
-   display: flex;
+   display:flex;
+   justify-content: center;
+}
 
+.main1{
+   display: flex;
+justify-content: space-evenly;
+width: 30%;
+
+}
+
+.main2{
+   display:flex;
+   width:30%;
+   justify-content: space-evenly;
+}
+
+h1.titles{
+   width: 30%;
+   text-align: center;
+   align-self:center;
+   font-size:3rem;
+   margin: 0 35px 0 35px;
+}
+
+.surfer{
+   background-image: url(../sunshineAssets/contact-1.jpeg);
+   background-size: cover;
+   height: 90vh;
+   width: 100%;
 }
 
 header{
@@ -95,13 +123,15 @@ header{
 
 .nav li{
    padding: 50px 0 50px 0;
-   font-size: 1.2rem;
-   justify-content: space-between;
+   font-size: 0.6rem;
+   justify-content: space-evenly;
+   font-family: 'Poppins';
+   text-transform: uppercase;
 }
 
-h1{
+/* h1{
    font-size: 2.2rem;
-}
+} */
 
 /**/
 main{
@@ -413,7 +443,7 @@ button{
   background-color: #211F1F;
   background-position: 50% 50%;
   /* put the height and width of your image here */
-  height: 150px;
+  height: 15px;
   width: 15px;
   border: none;
   margin: 10px;
@@ -428,6 +458,11 @@ input[type="text"] {
     background: transparent;
    border: none;
    border-bottom: 1px solid #999999;
+}
+
+.footer-three input[type="email"]{
+   width: 70%;
+   
 }
 
 
