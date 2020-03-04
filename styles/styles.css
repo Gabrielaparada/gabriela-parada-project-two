@@ -35,7 +35,8 @@ a{
    line-height: 18px;
 }
 
-.titles{
+.titles,
+.titles-contact-page{
    font-family: 'Playfair Display';
    font-weight: bold;
 }
@@ -58,6 +59,10 @@ span{
    color:black;
    font-weight: bold;
 }
+
+
+
+
 
 /*Header & Nav */
 
@@ -352,7 +357,7 @@ footer{
 }
 
 footer li,
-p,label,
+.p-footer,label,
 input[type="email"]{
    font-family: 'Poppins';
    font-size:0.7rem;
@@ -387,7 +392,7 @@ button{
    background-color: none;
 }
 
-button {
+.button-image {
   background-image: url(../sunshineAssets/paper-plane-regular.svg);
   background-repeat: no-repeat;
   background-color: #211F1F;
@@ -410,3 +415,54 @@ input[type="email"] {
 }
 
 
+/*------------Contact page--------------*/
+
+.titles-contact-page{
+   font-size: 2rem;
+}
+.titles-contact-page + p{
+   width: 50%;
+   padding: 15px 0 15px;
+   line-height: 17px;
+}
+
+.contact-page-main,
+.get-in-touch{
+   font-family: 'Poppins';
+   font-size:0.6rem;
+   
+   margin:100px 0 0 50px;
+}
+
+.contact-details{
+   display:flex;
+   justify-content: space-around;
+   margin-top: 50px;
+   color: rgb(153, 153, 153);
+}
+
+
+.contact-details{
+    line-height: 15px;
+}
+.contact-details + p {
+   line-height: 25px;
+   
+}
+
+.titles-contact-page + p {
+   color:rgb(153, 153, 153);
+
+h5{
+font-family: 'Playfair Display';
+font-weight: bold;
+font-size:0.9rem;
+margin-bottom: 8px;
+color:black
+}
+
+.contact-details i{
+   font-size: 1.7rem;
+   margin-bottom: 15px;
+   color:black;
+}
