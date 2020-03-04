@@ -7,6 +7,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 /*general styling*/
+
+
+.visuallyHidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .wrapper {
    max-width: 1280px;
    width: 100%;
@@ -408,10 +423,11 @@ button span {
   display: none;
 }
 
-input[type="email"] {
+input[type="email"],
+input[type="text"] {
     background: transparent;
-    border: none;
-    border-bottom: 1px solid #999999;
+   border: none;
+   border-bottom: 1px solid #999999;
 }
 
 
@@ -452,6 +468,7 @@ input[type="email"] {
 
 .titles-contact-page + p {
    color:rgb(153, 153, 153);
+}
 
 h5{
 font-family: 'Playfair Display';
@@ -465,4 +482,41 @@ color:black
    font-size: 1.7rem;
    margin-bottom: 15px;
    color:black;
+}
+
+.get-in-touch{
+   height:400px;
+}
+
+fieldset{
+   display: flex;
+   justify-content: flex-end;
+   justify-content: space-around;
+   margin-bottom:30px
+}
+
+input{
+   width: 30%;
+}
+
+.message{
+   padding-bottom: 135px;
+   width: 97%;
+   margin-left: 14px;
+}
+
+.contact-button{
+   margin-left:11px;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid #999999;
+   margin: 25px;
+   text-transform: uppercase;
+   font-family: 'Poppins';
+   font-weight: bold;
+
+}
+
+input[type="text"]{
+   font-size:0.7rem;
 }
