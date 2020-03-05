@@ -26,6 +26,8 @@
             <li><a href=""></a><i class="fas fa-shopping-bag"></i></li>
          </ul>
       </nav>
+
+      <div class="burger-menu"><i class="fas hidden fa-bars"></i></div>
    <header class="beach">
    
    </header>
@@ -49,6 +51,7 @@
    </main>
 
    <section class="section2 wrapper">
+      <img class="section2-img2 hidden" src="../sunshineAssets/home-3-2.jpeg" alt="">
          <ul class="package one">
             <li><i class="fas fa-sun"></i>Sunny Season
             <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur inventore eum illo aut porro, eligendi omnis corrupti magni.</p></li>
@@ -75,9 +78,9 @@
          </ul>
          
 
-      <!-- <div class="section2-img"> -->
+      
          <img class="section2-image" src="../sunshineAssets/home-3.jpeg">
-         <!-- </div> -->
+        
       
    </section>
    <div class="gallery wrapper">
@@ -110,6 +113,7 @@
    <section class="contact-parent">
       
          <img class="contact-image" src="../sunshineAssets/home-10.jpeg">
+         <img class="hidden contact-image2" src="../sunshineAssets/home-10 copy.jpeg">
       
 
       <div class="contact-child-two">
@@ -148,14 +152,16 @@
          </div>
 
          <div class="footer-three">
-            <p class="p-footer">Sign up for our newsletter</p>
-            <label>Email</label>
-            <input type="email" placeholder="Your email">
-            <button class="button-image" type="submit"></button>
+            <form>
+               <p class="p-footer">Sign up for our newsletter</p>
+               <label for="email" class="visuallyHidden message">Email</label>
+               <input type="email" type="email" id="email" name="email" placeholder="Your email">
+               <button class="button-image" type="submit"><i class="far fa-paper-plane"></i></button>
+            </form>
             
          </div>
       </section>
-      <hr class="footer-break">
+      <div class="footer-break"></div>
       <section class="footer-copyright">
          <div class="copyright">
             <p  class="p-footer"><i class="far fa-copyright"></i>2018 Sunshine Hotel</p>
