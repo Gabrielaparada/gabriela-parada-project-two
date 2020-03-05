@@ -10,16 +10,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 .visuallyHidden:not(:focus):not(:active) {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
 }
 
 .wrapper {
@@ -147,10 +147,10 @@ header{
 
 .main-blog{
    background:white;
-   width: 65%;
+   width: 80%;
    position: relative;
    top: -50px;
-left: 18%;
+left: 10%;
 }
 
 
@@ -625,9 +625,8 @@ input[type="text"]{
 
 .blog-info{
    display:flex;
-   margin-top:30px;
    justify-content: space-between;
-   margin-right:54px;
+   margin: 30px 54px 4px 0;
    align-items: center;
    
 }
@@ -649,7 +648,9 @@ input[type="text"]{
 
 
 .blog-break{
-   width: 95%;
+   width: 94%;
+   border-top: 1px solid black;
+   margin: 0 auto;
 } 
 
 .blog-article{
@@ -677,19 +678,30 @@ input[type="text"]{
 
 .posts-images{
    display: flex;
-   /* width: 100%; */
-   justify-content: space-around;
-   justify-content: center;
+   width: 100%;
+   height:400px;
+   flex-wrap:wrap
+   /* margin-left: 31px; */
+   /* margin: 0 auto; */
 }
+
+.post-img1,
+.post-img2,
+.post-img3{
+   width: 100%;
+   padding: 20px;
+   flex: 1 0 33%;
+   min-width: 289px;
+   border: 1px solid black;
+}
+
+
 
 .posts-images img{
-   width: 70%;
+   max-width: 289px;
+   /* min-width: 200px; */
+   
    
 
-}
 
-.posts-img1{
-   margin: 0 auto;
-   justify-content: center;
 
-}
