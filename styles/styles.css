@@ -339,7 +339,7 @@ font-weight: bold;
 font-family: "Poppins";
 font-weight: 400;
 color: rgb(204, 204, 204);
-font-size: 0.7rem;
+font-size: 0.8rem;
 }
 
 .content.black {
@@ -790,10 +790,14 @@ position: relative;
 
 input[type="email"],
 input[type="text"] {
-color: #999999;
+color: black;
 background: transparent;
 border: none;
 border-bottom: 1px solid #999999;
+}
+
+input[placeholder="Your email"]{
+   color:#999999;
 }
 
 .footer-three input[type="email"] {
@@ -926,6 +930,8 @@ font-size: 0.8rem;
 .comments h4 {
 font-family: "Playfair Display";
 font-weight: bold;
+padding-left:4px;
+margin-right: 20px;
 }
 
 .blog-profile {
@@ -939,7 +945,7 @@ width: 25%;
 .blog-info {
 display: flex;
 justify-content: space-between;
-margin: 30px 54px 4px 0;
+margin: 30px 34px 4px 0;
 align-items: center;
 }
 
@@ -947,11 +953,6 @@ align-items: center;
 font-weight: bold;
 }
 
-/* .blog-info{
-display:flex;
-justify-content: space-between;
-width: 60%;
-}  */
 
 .blog-img1 {
 border-radius: 80%;
@@ -960,59 +961,130 @@ height: 80px;
 
 .blog-break {
 width: 94%;
-border-top: 1px solid black;
+border-top: 1px solid #CCCCCC;
 margin: 0 auto;
 }
 
 .blog-article {
-margin: 20px 22px;
+margin: 30px 22px;
 }
 
 .blog-article p {
 padding-bottom: 23px;
 }
 
-.media-blog {
-margin-top: 21px;
+.blog-social-icons{
+   display:flex;
+   justify-content: space-between;
+   width: 16%;
+   margin-top:40px;
+   
+}
+
+.blog-social-icons a{
+   width: 40px;
+   height: 40px;
+   
 }
 
 .fab.media {
-padding: 5px;
+/* padding: 5px; */
+margin-left: 15px;
+font-size: 1.2rem;
 color: rgb(204, 204, 204);
+}
+
+.fab.media:hover{
+   color:#A4F1DC;
+   font-size: 1.8rem;
+   transform: translate(0 -40px);
+   transition: all 0.5s
 }
 
 .posts h2 {
 font-size: 1.6rem;
-margin-left: 20px;
+margin-left: 34px;
+margin-bottom: 5px;
 }
 
 .posts-images {
 display: flex;
 width: 100%;
-height: 400px;
+height: 338;
 flex-wrap: wrap;
-/* margin-left: 31px; */
-/* margin: 0 auto; */
+justify-content: space-between;
+margin-top:30px
 }
 
 .post-img1,
 .post-img2,
 .post-img3 {
-
-padding: 20px;
-flex: 1 0 33%;
+width: 30%;
+padding: 10px;
+background-color:white;
+-webkit-box-shadow: 14px 18px 17px -25px rgba(0,0,0,1);
+-moz-box-shadow: 14px 18px 17px -25px rgba(0,0,0,1);
+box-shadow: 14px 18px 17px -25px rgba(0,0,0,1);
+/* flex: 1 1 33%; */
 /* min-width: 289px; */
-border: 1px solid black;
+/* border:red 1px solid; */
+justify-content: space-around;
+}
+
+/* .post-img1:hover,
+.post-img2:hover,
+.post-img3:hover{
+   width: 32%;
+  -webkit-box-shadow: 17px 40px 24px -37px rgba(130,127,130,0.23);
+-moz-box-shadow: 17px 40px 24px -37px rgba(130,127,130,0.23);
+box-shadow: 17px 40px 24px -37px rgba(130,127,130,0.23);
+   transition: all .8s;
+} */
+
+
+.post-img1{
+   margin-left: 20px;
+}
+.post-img3{
+   margin-right: 25px;
 }
 
 .posts-images img {
 max-width: 100%;
-/* min-width: 200px; */
+}
+
+
+.post-date,
+.continue{
+   margin: 12px 0 0 11px;
+   color:#CCCCCC;
+   font-family: "Poppins";
+   font-size:0.7rem;
+}
+
+.continue{
+   color:black;
+   margin: 40px 0 0 15px ;
+   padding-bottom: 10px;
+}
+
+.continue:hover{
+   font-size:1rem;
+   transition: all 1s;
+   font-weight: bold;
+}
+
+.posts-images h4{
+   line-height: 19px;
+   font-family: "Playfair Display";
+   font-weight: bold;
+   margin: 10px 0 7px 10px;
 }
 
 .comments h4 {
 font-size: 2rem;
 padding: 50px 0 20px 30px;
+/* margin: 0 0 7px 2px; */
 }
 
 .intouch h5 {
@@ -1027,6 +1099,70 @@ margin-left: 21px;
 .contact-page-form {
 margin-top: 37px;
 }
+
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #EDEDED;
+}
+
+.tip-left {
+  top: 10px;
+  left: -21px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;  
+}
+
+.dialogbox .body {
+  position: relative;
+  width: 84%;
+   height: 93px;
+  margin: 20px 10px;
+  padding: 5px;
+  background-color:rgb(237, 237, 237);
+  border-radius: 3px;
+  border: 5px solid rgb(237, 237, 237);
+  font-family: "Poppins";
+  color: rgb(153, 153, 153)
+}
+
+.dialogbox.one,
+.dialogbox.two{
+   display: flex;
+   align-self: center;
+}
+
+.blog-profile {
+   align-self: center;
+   width: 9%;
+   margin-bottom:27px;
+   padding-right:10px;
+}
+
+.reply{
+   color:#A4F1DC;
+   font-style: italic;
+}
+
+.blog-profile-title{
+   padding-top:7px;
+   color:black;
+
+}
+
+.blog-profile-text{
+   font-size: 0.8rem;
+   padding-top:8px;
+}
+
+.date{
+   font-size: 0.7rem;
+   padding-top:14px;
+}
+
 
 /*----------Media queries -------------*/
 
@@ -1113,11 +1249,6 @@ margin-top: 37px;
    width: 100%;
 }
 
-/* .package {
-   width: 100%;
-   padding-top: 50px;
-   justify-content: space-evenly;
-} */
 
 .testimonials-child {
    padding-top: 36px;
@@ -1126,6 +1257,33 @@ margin-top: 37px;
 .contact-child-two h2 {
    margin-bottom: 28px;
 }
+
+.posts-images{
+   display: inline-block;
+   margin-top:0;
+}
+
+.post-img1, .post-img2, .post-img3{
+   margin: 0 auto;
+   width: 55%;
+   margin-top: 30px
+}
+
+   .island{
+      background-position-x: -170px;
+      transition: all .5s;
+   }
+
+   .blog-profile{
+      display:block;
+   }
+
+   .blog-sub-header{
+      text-align: center;
+      margin: 0 auto;
+      margin-top: 5px;
+   }
+
 }
 
 @media (max-width: 776px) {
@@ -1160,6 +1318,14 @@ margin-top: 37px;
 
 .gallery-flex img {
    width: 42%;
+}
+
+.blog-break{
+   width: 77%;
+}
+
+.island{
+   background-position-x: -350px;
 }
 }
 
@@ -1322,8 +1488,7 @@ form {
 
 .contact-break {
    display: block;
-   border-bottom: .5px solid
-   black;
+   border-bottom: .5px solid #CCCCCC;
    width: 64%;
    margin: 0 auto;
 }
@@ -1374,6 +1539,11 @@ text-align: center;
 margin: 0 auto;
 }
 
+.dialogbox .body{
+   width: 78%;
+   height: 105px;
+}
+
 @media (max-width: 497px) {
 .about-content h2 {
    font-size: 1.7rem;
@@ -1401,9 +1571,19 @@ margin: 0 auto;
    margin-left: 39px;
 }
 
+.surfer{
+   background-position-x: -509px;
+transition: all .5s;
+}
+}
 
 
 @media (max-width: 416px) {
+
+   .surfer{
+      background-position-x: -601px;
+transition: all .5s;
+   }
 .nav .titles {
    margin-right: 54px;
 }

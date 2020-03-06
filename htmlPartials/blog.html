@@ -70,48 +70,65 @@
 
             <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque temporibus nisi quaerat dolor quia, iusto sint a esse repudiandae minima repellendus veritatis laboriosam libero vitae! Molestias id vero eos deleniti eius sequi, perspiciatis minus harum facere ab fugit numquam a, nam quaerat vel, obcaecati alias.</p>
 
-            <p class="media-blog blog-sub-header">Share: <i class="fab media fa-twitter"></i> <i class="fab media fa-instagram"></i> <i class="fab media fa-facebook-f"></i> <i class="fab media fa-google-plus-g"></i></p>
+            <div class="blog-social-icons">
+               <p class="media-blog blog-sub-header">Share:</p>
+               <a href="#"><i class="fab media fa-twitter"></a></i> 
+               <a href="#"><i class="fab media fa-instagram"></a></i>
+               <a href="#"><i class="fab media fa-facebook-f"></a></i> 
+               <a href="#"><i class="fab media fa-google-plus-g"></a></i>
+
+            </div>
          </article>
 
          <section class="posts">
             <h2 class="blog-sub-header">Related Posts</h2>
-            <hr class="blog-break">
+            <div class="blog-break"></div>
             <div class="posts-images">
                <div class="post-img1">
                   <img src="../sunshineAssets/blog-3.jpeg" alt="">
-                  <p class="span">June, 24th, 2016</p>
+                  <p class="post-date">June, 24th, 2016</p>
                   <h4>Five reasons to stay at the beautiful Sunshine Hotel</h4>
-                  <p class="continue">Continue <i class="fas fa-long-arrow-alt-right"></i></p>
+                  <a href="#"><p class="continue">Continue <i class="fas fa-long-arrow-alt-right"></i></p></a>
                </div>
                   <div class="post-img2">
                   <img src="../sunshineAssets/blog-4.jpeg" alt="">
-                  <p class="span">April, 24th, 2016</p>
+                  <p class="post-date">April, 24th, 2016</p>
                   <h4>Experience romantic space just have only at the Sunshine Hotel</h4>
-                  <p class="continue">Continue <i class="fas fa-long-arrow-alt-right"></i></p>
+                  <a href="#"><p class="continue">Continue <i class="fas fa-long-arrow-alt-right"></i></p></a>
                </div>
 
                <div class="post-img3">
                   <img src="../sunshineAssets/blog-5.jpeg" alt="">
-                  <p class="span">May, 08th, 2016</p>
+                  <p class="post-date">May, 08th, 2016</p>
                   <h4>Discover activities interested in Sunshine Hotel</h4>
-                  <p class="continue">Continue <i class="fas fa-long-arrow-alt-right"></i></p>
+                  <a href="#"><p class="continue">Continue <i class="fas fa-long-arrow-alt-right"></i></p></a>
                </div>
             </div>
 
             <div class="comments">
                <h4>02 Comments</h3>
-               <div class="blog-break"></div>
-               <div class="first-comment">
-                  <img src="" alt="">
-                  <p>Daniel Vandaft - <span class="blue">Reply</span></p>
-                  <p>Pretty excursion pretty fun excursion. Colorful traveler theme blogger fun, website bloger design organized travel blogger.</p>
-                  <p class="date">Jul 17, 2015 at 15 hours ago</p>
+               <div class="dialogbox one">
+                  <img class="blog-profile one" src="../sunshineAssets/blog-6.jpeg" src="">
+                  <div class="body">
+                     <div class="tip tip-left"></div>
+                     <div class="message1">
+                        <p class="blog-profile-title 1">Jenifer Loopz - <span class="reply">Reply</span></p>
+                        <p class="blog-profile-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, dolorum?</p>
+                        <p class="date">Jul 17, 2015 at 15 hours ago</p>
+                     </div>
+                  </div>
                </div>
 
-               <div class="second-comment">
-                  <img src="" alt="">
-                  <p>Jenifer Loopz - <span class="blue">Reply</span></p>
-                  <p class="date">Pretty excursion pretty fun excursion. Colorful traveler theme blogger fun, website blogger design organized travel blogger.</p>
+               <div class="dialogbox two">
+                  <img class="blog-profile two" src="../sunshineAssets/blog-7.jpeg" src="">
+                  <div class="body">
+                     <div class="tip tip-left"></div>
+                     <div class="message2">
+                        <p class="blog-profile-title 2">Daniel Vandaft - <span class="reply">Reply</span></p>
+                        <p class="blog-profile-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, dolorum?</p>
+                        <p class="date">Jul 17, 2015 at 15 hours ago</p>
+                     </div>
+                  </div>
                </div>
             </div>
 
@@ -131,8 +148,8 @@
                            <input type="text" id="optional" name="optional" placeholder="Subject (Optional)">
                         </fieldset>
                
-                        <label for="message" class="visuallyHidden message">Here goes your message</label>
-                        <input class="message" type="text" id="message" name="message" placeholder="Here goes your message">
+                        <textarea name="message2" rows="8" cols="90" placeholder="Here goes your text">Here goes your message</textarea>
+                        
                
                         <button class="contact-button">Send Message</button>
                
@@ -145,7 +162,7 @@
    </div>
 
    <footer>
-      <section class="footer-content">
+      <section class="footer-content wrapper">
          <div class="footer-one">
             <ul>
                <li>Site Map</li>
@@ -155,7 +172,7 @@
                <li>Affiliate</li>
             </ul>
          </div>
-      
+   
          <div class="footer-two">
             <ul>
                <li>FAQs</li>
@@ -164,20 +181,23 @@
                <li>Press</li>
             </ul>
          </div>
-      
+   
          <div class="footer-three">
-            <p>Sign up for our newsletter</p>
-            <label>Email</label>
-            <input type="email" placeholder="Your email">
-            <button></button>
+            <form>
+               <p class="p-footer">Sign up for our newsletter</p>
+               <label for="email" class="visuallyHidden message">Email</label>
+               <input class="place" type="email" type="email" id="email" name="email" placeholder="Your email">
+               <button class="button-image" type="submit"><i class="far fa-paper-plane"></i></button>
+            </form>
+   
          </div>
       </section>
-      <section>
-         <hr>
+      <div class="footer-break"></div>
+      <section class="footer-copyright">
          <div class="copyright">
-            <p><i class="far fa-copyright"></i>2018 Sunshine Hotel</p>
+            <p class="p-footer"><i class="far fa-copyright"></i>2018 Sunshine Hotel</p>
          </div>
-      
+   
          <div class="social-footer">
             <ul>
                <li><i class="fab fa-facebook-f"></i></li>
