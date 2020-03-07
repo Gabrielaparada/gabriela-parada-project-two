@@ -1,0 +1,412 @@
+nav {
+   display: flex;
+   justify-content: center;
+   position: relative;
+}
+
+.burger-menu {
+   position: absolute;
+   top: 3%;
+   right: 3%;
+   font-size: 1.6rem;
+   filter: opacity(0);
+}
+
+.main1 {
+   display: flex;
+   justify-content: space-evenly;
+   width: 30%;
+}
+
+.main2 {
+   display: flex;
+   width: 30%;
+   justify-content: space-evenly;
+}
+
+nav .titles {
+   width: 30%;
+   text-align: center;
+   align-self: center;
+   font-size: 3rem;
+   margin: 0 35px 0 35px;
+}
+
+header {
+   background-image: url(../sunshineAssets/home-1.jpeg);
+   background-size: cover;
+   height: 90vh;
+   width: 100%;
+}
+
+.island {
+   background-image: url(../sunshineAssets/blog-1.jpeg);
+   background-size: cover;
+   height: 90vh;
+   width: 100%;
+}
+
+.surfer {
+   background-image: url(../sunshineAssets/contact-1.jpeg);
+   background-size: cover;
+   height: 90vh;
+   width: 100%;
+}
+
+.background {
+   background-color: rgb(237, 237, 237);
+   position: relative;
+}
+
+.main-blog {
+   background: white;
+   width: 80%;
+   position: relative;
+   top: -50px;
+   left: 10%;
+}
+
+.nav li {
+   padding: 50px 0 50px 0;
+   font-size: 0.6rem;
+   justify-content: space-evenly;
+   font-family: "Poppins";
+   text-transform: uppercase;
+}
+
+
+/**/
+
+.main-main-page {
+   background-color: rgb(237, 237, 237);
+   padding-bottom: 180px;
+}
+
+main .sub-header {
+   padding-top: 95px;
+   text-align: center;
+   margin-bottom: 38px;
+}
+
+.about-flex {
+   display: flex;
+   justify-content: center;
+}
+
+.about-image .selfie {
+   border: 14px solid white;
+   width: 80%;
+   height: auto;
+}
+
+.about-image {
+   position: relative;
+   height: 100%;
+}
+
+.round-text {
+   position: absolute;
+   width: 42%;
+   bottom: -64px;
+   left: -20%;
+}
+
+.about-break {
+   width: 10%;
+   margin: 0 0 19px 8px;
+}
+
+.about-content {
+   width: 45%;
+}
+
+.about-content p {
+   font-size: 0.7rem;
+   margin-top: 33px;
+   line-height: 24px;
+   width: 100%;
+   font-family: "Poppins";
+}
+
+.about-content h2 {
+   font-size: 2.3rem;
+   width: 70%;
+   line-height: 45px;
+}
+
+/**/
+.section2 .content {
+   text-transform: capitalize;
+}
+
+.section2 {
+   display: flex;
+   justify-content: space-between;
+   flex-basis: auto;
+   border: red solid 2px;
+   flex-wrap: wrap;
+}
+.section2-image {
+   flex: 1 1 510px;
+   min-width: 350px;
+   align-self: center;
+}
+
+.hidden {
+   display: none;
+}
+
+.package {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 177px 42px 108px 125px;
+   width: 53%;
+}
+
+.package li {
+   width: 40%;
+}
+
+.package i {
+   font-size: 1.3rem;
+   margin-left: -24px;
+   padding-right: 8px;
+}
+
+.package li {
+   margin-bottom: 20px;
+   font-size: 0.9rem;
+}
+
+/*gallery section*/
+
+.gallery {
+   background-image: url(../sunshineAssets/pattern.png);
+}
+
+.testimonials-parent {
+   padding-top: 100px;
+}
+
+.testimonials-child {
+   margin: 0 auto;
+   width: 50%;
+   text-align: center;
+   background-color: white;
+   padding: 40px 50px;
+   width: 68%;
+   height: 378px;
+   padding-top: 65px;
+}
+
+.testimonials-child .sub-header {
+   margin-bottom: 28px;
+}
+
+
+.review {
+   font-style: italic;
+   font-size: 1rem;
+   line-height: 24px;
+   margin-bottom: 15px;
+   font-family: "Playfair Display";
+   padding: 0 50px;
+}
+
+.testimonials-parent i {
+   color: gold;
+   margin-bottom: 20px;
+}
+
+.testimonials-child .content {
+   font-family: "Poppins";
+   font-size: 0.7rem;
+}
+
+.grey {
+   color: rgb(204, 204, 204);
+   font-weight: 400;
+   font-size: 0.7rem;
+   font-family: "Poppins";
+}
+
+.gallery-child .sub-header {
+   padding-top: 90px;
+   text-align: center;
+}
+
+.gallery h2 {
+   font-size: 2.8rem;
+   text-align: center;
+   margin: 30px 0 36px 0;
+}
+
+.gallery-flex {
+   width: 100%;
+   margin: auto 0;
+   text-align: center;
+   padding-bottom: 100px;
+}
+
+.gallery-flex img {
+   justify-content: space-between;
+   width: 25%;
+   padding: 15px;
+}
+
+.contact-parent {
+   background-color: white;
+   display: flex;
+   flex-wrap: wrap-reverse;
+
+}
+
+.contact-child-two {
+   display: flex;
+   flex-direction: column;
+   margin-left: 85px;
+}
+
+.contact-child-two h2 {
+   margin: 21px 0 74px 0;
+   text-align: left;
+}
+
+.info {
+   margin-top: 80px;
+   text-align: left;
+}
+
+.contact-image {
+   width: 53%;
+   height: auto;
+}
+
+.gray-text {
+   color: rgb(204, 204, 204);
+}
+
+.contact-child-two h3 {
+   font-size: 1.3rem;
+   margin-bottom: 18px;
+}
+
+.contact-child-two p {
+   font-family: "Poppins";
+   font-size: 0.8rem;
+   color: rgb(153, 153, 153);
+}
+
+.email-text {
+   margin: 20px 0 50px 0;
+}
+
+.contact-child-two .email-span {
+   color: black;
+   font-family: "Playfair Display";
+   font-weight: bold;
+}
+
+.contact-child-two .phone-number {
+   color: black;
+   font-family: "Playfair Display";
+   font-weight: bold;
+   font-size: 2rem;
+   margin-top: 10px;
+   margin-bottom: 30px;
+}
+
+/*footer*/
+
+footer {
+   background-color: #211f1f;
+   color: #999999;
+}
+
+footer li,
+.p-footer,
+label,
+input[type="email"] {
+   font-family: "Poppins";
+   font-size: 0.7rem;
+   padding: 7px;
+}
+
+.footer-content {
+   display: flex;
+   padding-top: 70px;
+   justify-content: space-evenly;
+}
+
+.footer-break {
+   width: 70%;
+   border: 1px solid #999999;
+   margin: 0 auto;
+   margin-top: 10px;
+}
+
+.footer-copyright {
+   display: flex;
+   justify-content: space-around;
+   padding: 20px;
+}
+
+.social-footer ul {
+   display: flex;
+}
+
+.social-footer li {
+   padding: 10px;
+}
+
+button {
+   background-color: none;
+}
+
+.button-image {
+   background-color: #211f1f;
+   color: #999999;
+   border: none;
+   margin: 10px;
+   position: absolute;
+   right: 1px;
+}
+
+.button-image i {
+   font-size: 0.9rem;
+}
+
+button span {
+   display: none;
+}
+
+form {
+   position: relative;
+}
+
+input[type="email"],
+input[type="text"] {
+   color: black;
+   background: transparent;
+   border: none;
+   border-bottom: 1px solid #999999;
+}
+
+input[placeholder="Your email"]{
+   color:#999999;
+}
+
+.footer-three input[type="email"] {
+   width: 95%;
+}
+
+textarea {
+   width: 100%;
+   color: #999999;
+   border: none;
+   resize: none;
+   margin-left: 18px;
+   font-family: "Poppins";
+   font-size: 0.7rem;
+}

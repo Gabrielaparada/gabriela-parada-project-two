@@ -1,0 +1,75 @@
+.visuallyHidden:not(:focus):not(:active) {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+
+.wrapper {
+   max-width: 1280px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+   display: inline-block;
+}
+
+.nav li {
+   display: inline-block;
+   font-family: "Playfair Display";
+   font-weight: bold;
+}
+
+.content {
+   font-family: "Poppins";
+   font-weight: 400;
+   color: rgb(204, 204, 204);
+   font-size: 0.8rem;
+}
+
+.content.black {
+   color: black;
+}
+
+.section2 .content {
+   font-family: "Poppins";
+   font-weight: 400;
+   color: rgb(204, 204, 204);
+   font-size: 0.6rem;
+   padding-top: 15px;
+   line-height: 18px;
+}
+
+.titles,
+.titles-contact-page {
+   font-family: "Playfair Display";
+   font-weight: bold;
+}
+
+.sub-header {
+   color: rgb(153, 153, 153);
+   font-family: "Poppins";
+   text-transform: uppercase;
+   font-size: 0.7rem;
+   letter-spacing: 3px;
+}
+
+.package li {
+   font-family: "Poppins";
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+span {
+   color: black;
+   font-weight: bold;
+}
