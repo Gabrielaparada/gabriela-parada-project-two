@@ -298,6 +298,21 @@ span {
   font-weight: bold;
 }
 
+.hamburger-nav li {
+  padding: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,7 +406,81 @@ header {
   text-transform: uppercase;
 }
 
-/**/
+/*secondary nav*/
+.hamburger-nav {
+  display: none;
+}
+
+.secondary-nav {
+  position: relative;
+  background: transparent;
+  position: fixed;
+  z-index: 10;
+  width: 40%;
+  /*note how width and right are the same values*/
+  right: -40%;
+  /* Off the screen as wide as you are */
+  top: 96px;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.secondary-nav li {
+  font-family: "Poppins";
+}
+
+.slide-menu {
+  color: black;
+  font-size: 2rem;
+  margin-top: 11px;
+}
+
+.secondary-nav a {
+  border-bottom: 1px solid grey;
+  display: inline-block;
+  font-size: 40px;
+  width: 100%;
+  padding: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+ul.secondary-nav a:hover,
+ul.secondary-nav a:focus {
+  background: #3498db;
+}
+
+input[type="checkbox"]:checked + ul.secondary-nav {
+  right: 0;
+  /*when the checkbox is checked, put the ul.nav back to right: 0; It was at right:-30%;*/
+}
+
+input[type="checkbox"] {
+  display: none;
+  position: absolute;
+  left: -69px;
+  top: -64px;
+}
+
+label[for="toggle"] {
+  /*position the menu so that it doesn't slide off screen when we open it*/
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: black;
+  z-index: 10;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.secondary-nav a {
+  width: 100%;
+  padding-top: 13px;
+}
+
+/*about with portrait image*/
 .main-main-page {
   background-color: #ededed;
   padding-bottom: 180px;
@@ -453,7 +542,7 @@ main .sub-header {
   line-height: 45px;
 }
 
-/**/
+/*amenities section*/
 .section2 .content {
   text-transform: capitalize;
 }
@@ -467,7 +556,8 @@ main .sub-header {
           justify-content: space-between;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
-  border: red solid 2px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -524,6 +614,7 @@ main .sub-header {
 }
 
 .testimonials-child {
+  position: relative;
   margin: 0 auto;
   width: 50%;
   text-align: center;
@@ -547,7 +638,7 @@ main .sub-header {
   padding: 0 50px;
 }
 
-.testimonials-parent i {
+.testimonials-parent .fa-star {
   color: gold;
   margin-bottom: 20px;
 }
@@ -555,6 +646,23 @@ main .sub-header {
 .testimonials-child .content {
   font-family: "Poppins";
   font-size: 0.7rem;
+}
+
+.chevron-r {
+  position: absolute;
+  right: -50px;
+  top: 49%;
+  color: black;
+  font-size: 2.3rem;
+}
+
+.chevron-l {
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: -45px;
+  top: 49%;
+  font-size: 2.3rem;
 }
 
 .grey {
@@ -749,6 +857,11 @@ input[placeholder="Your email"] {
 
 .footer-three input[type="email"] {
   width: 95%;
+}
+
+.footer-one a,
+.footer-two a {
+  color: #999999;
 }
 
 textarea {
@@ -1285,13 +1398,7 @@ input[type="text"] {
   }
   .main1,
   .main2 {
-    overflow: hidden;
-    position: absolute;
-    left: -999px;
-  }
-  .burger-menu {
-    -webkit-filter: opacity(1);
-            filter: opacity(1);
+    display: none;
   }
   .nav .titles {
     font-size: 2.5rem;
@@ -1472,6 +1579,9 @@ input[type="text"] {
   nav .titles {
     padding: 26px 0 26px 0;
   }
+  .hamburger-nav {
+    display: inline-block;
+  }
 }
 
 @media (max-width: 497px) {
@@ -1508,6 +1618,14 @@ input[type="text"] {
   .blog-title {
     font-size: 1.7rem;
     width: 87%;
+  }
+  .chevron-r {
+    font-size: 2rem;
+    right: 3px;
+  }
+  .chevron-l {
+    font-size: 2rem;
+    left: 3px;
   }
 }
 

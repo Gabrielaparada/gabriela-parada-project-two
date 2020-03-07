@@ -12,22 +12,51 @@
    <title>Sunshine</title>
 </head>
 <body>
+   <div class="wrapper">
       <nav class="nav">
          <ul class="main1 nav">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">About</a></li>
             <li><a href="">Reserve</a></li>
          </ul>
          <h1 class="titles">Sunshine</h1>
          <ul class="main2 nav">
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href=""></a><i class="fas fa-search"></i></li>
-            <li><a href=""></a><i class="fas fa-shopping-bag"></i></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="">
+                  <i aria-hidden="true" class="fas fa-search" title="Search"></i>
+               </a>
+               <span class="sr-only">Search</span>
+            </li>
+   
+            <li>
+               <a href=""><i aria-hidden="true" class="fas fa-shopping-bag" title="Shopping Cart"></i></a>
+               <span class="sr-only">Shopping Cart</span>
+            </li>
          </ul>
       </nav>
+   
+      <nav class="hamburger-nav hidden">
+         <label for="toggle"><i aria-hidden="true" class="slide-menu fa fa-bars" title="Menu"></i>
+            <span class="sr-only">Menu</span>
+         </label>
+         <input type="checkbox" id="toggle" name="toggle">
+         <ul class="secondary-nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="">Reserve</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./blog.html">Contact</a></li>
+            <li><a href=""><i aria-hidden="true" class="fas fa-search" title="Search"></i></a>
+               <span class="sr-only">Search</span>
+            </li>
+            <li><a href=""><i aria-hidden="true" class="fas fa-shopping-bag" title="Shopping Cart"></i></a>
+               <span class="sr-only">Shopping Cart</span>
+            </li>
+         </ul>
+      </nav>
+   </div>
 
-      <div class="burger-menu"><i class="fas hidden fa-bars"></i></div>
    <header class="beach">
    
    </header>
@@ -52,28 +81,27 @@
 
    <section class="section2 wrapper">
       <img class="hidden section-img-w" src="../sunshineAssets/home-3w.jpg" alt=>
-      <!-- <img class="section2-img2 hidden" src="../sunshineAssets/home-3-2.jpeg" alt=""> -->
          <ul class="package one">
-            <li><i class="fas fa-sun"></i>Sunny Season
+            <li><i aria-hidden="true" class="fas fa-sun"></i>Sunny Season
             <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur inventore eum illo aut porro, eligendi omnis corrupti magni.</p></li>
 
-            <li><i class="fas fa-utensils"></i>Five start restaurants
+            <li><i aria-hidden="true" class="fas fa-utensils"></i>Five start restaurants
             <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum voluptate doloribus harum
             repellendus voluptas numquam expedita </p>
             </li>
 
-            <li><i class="fas fa-plane"></i>Flight Included
+            <li><i aria-hidden="true" class="fas fa-plane"></i>Flight Included
             <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nisi sed hic dolorem eos libero neque sequi magnam. Odio, unde?</p></li>
 
-            <li><i class="fas fa-glass-martini"></i>all inclusive
+            <li><i aria-hidden="true" class="fas fa-glass-martini"></i>all inclusive
             <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum voluptate doloribus harum
             repellendus voluptas numquam expedita eos cum</p>
             </li>
 
-            <li><i class="fas fa-leaf"></i>Guided nature excursion
+            <li><i aria-hidden="true" class="fas fa-leaf"></i>Guided nature excursion
             <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, est. Molestias id facere odio doloribus reiciendis repellat expedita vero ipsa?</p></li>
 
-            <li><i class="fas fa-bell"></i>wake up service
+            <li><i aria-hidden="true" class="fas fa-bell"></i>wake up service
             <p class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum voluptate doloribus harum repellendus voluptas numquam expedita eos cum consequatur facere!</p></li>
 
          </ul>
@@ -81,16 +109,18 @@
 
          
          <img class="section2-image" src="../sunshineAssets/home-3.jpeg">
-        
-      
+
+
    </section>
    <div class="gallery wrapper">
    <article class="testimonials-parent">
       <div class="testimonials-child">
+         <a href="#"><i aria-hidden="true" class="fas fa-chevron-right chevron-r"></i></a>
+         <a href="#"><i aria-hidden="true" class="fas fa-chevron-right chevron-l"></i></a>
          <p class="sub-header">Testimonial</p>
          <h2 class="titles">What Clients Say</h2>
          <p class="review">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis nulla distinctio similique pariatur quisquam provident ipsa itaque, ipsum quaerat rem exercitationem. Maiores nemo, deserunt quae molestiae atque tenetur officia delectus"</p>
-         <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+         <i aria-hidden="true" class="far fa-star"></i><i aria-hidden="true" class="far fa-star"></i><i aria-hidden="true" class="far fa-star"></i><i aria-hidden="true" class="far fa-star"></i><i aria-hidden="true" class="far fa-star"></i>
          <p class="content"><span>Adam Levine</span> - <span class="grey">Review from</span> Trip Advisor</p>
       </div>
    </article>
@@ -135,20 +165,20 @@
       <section class="footer-content wrapper">
          <div class="footer-one">
             <ul>
-               <li>Site Map</li>
-               <li>Term & Conditions</li>
-               <li>Privacy Policy</li>
-               <li>Help</li>
-               <li>Affiliate</li>
+               <li><a href="#">Site Map</a></li>
+               <li><a href="#">Term & Conditions</a></li>
+               <li><a href="#">Privacy Policy</a></li>
+               <li><a href="#">Help</a></li>
+               <li><a href="#">Affiliate</a></li>
             </ul>
          </div>
 
          <div class="footer-two">
             <ul>
-               <li>FAQs</li>
-               <li>Blog</li>
-               <li>Location</li>
-               <li>Press</li>
+               <li><a href="#">FAQs</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Location</a></li>
+               <li><a href="#">Press</a></li>
             </ul>
          </div>
 
@@ -157,7 +187,10 @@
                <p class="p-footer">Sign up for our newsletter</p>
                <label for="email" class="visuallyHidden message">Email</label>
                <input class="place" type="email" type="email" id="email" name="email" placeholder="Your email">
-               <button class="button-image" type="submit"><i class="far fa-paper-plane"></i></button>
+               <button class="button-image" type="submit">
+                  <i aria-hidden="true" class="far fa-paper-plane" title="Submit button"></i>
+                  <span class="sr-only">Submit button</span>
+               </button>
             </form>
             
          </div>
@@ -165,14 +198,14 @@
       <div class="footer-break"></div>
       <section class="footer-copyright">
          <div class="copyright">
-            <p  class="p-footer"><i class="far fa-copyright"></i>2018 Sunshine Hotel</p>
+            <p  class="p-footer"><i aria-hidden="true" class="far fa-copyright"></i>2018 Sunshine Hotel</p>
          </div>
 
          <div class="social-footer">
             <ul>
-               <li><i class="fab fa-facebook-f"></i></li>
-               <li><i class="fab fa-twitter"></i></li>
-               <li><i class="fab fa-instagram"></i></li>
+               <li><i aria-hidden="true" class="fab fa-facebook-f"></i></li>
+               <li><i aria-hidden="true" class="fab fa-twitter"></i></li>
+               <li><i aria-hidden="true" class="fab fa-instagram"></i></li>
             </ul>
          </div>
       </section>

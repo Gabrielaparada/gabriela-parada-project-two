@@ -14,19 +14,40 @@
 <body>
    <nav class="wrapper">
       <ul class="main1 nav">
-         <li><a href="">Home</a></li>
-         <li><a href="">About</a></li>
+         <li><a href="./index.html">Home</a></li>
+         <li><a href="./index.html">About</a></li>
          <li><a href="">Reserve</a></li>
       </ul>
       <h2 class="titles">Sunshine</h2>
       <ul class="main2 nav">
-         <li><a href="">Blog</a></li>
-         <li><a href="">Contact</a></li>
-         <li><a href=""></a><i class="fas fa-search"></i></li>
-         <li><a href=""></a><i class="fas fa-shopping-bag"></i></li>
+         <li><a href="./blog.html">Blog</a></li>
+         <li><a href="./contact.html">Contact</a></li>
+         <li><a href=""></a><i aria-hidden="true" class="fas fa-search" title="Search"></i></li>
+         <span class="sr-only">Search</span>
+         <li><a href=""><i aria-hidden="true" class="fas fa-shopping-bag" title="Shopping Cart"></i></a></li>
+         <span class="sr-only">Shopping Cart</span>
       </ul>
       </nav>
-      <div class="burger-menu"><i class="fas hidden fa-bars"></i></div>
+
+      <nav class="hamburger-nav hidden">
+         <label for="toggle"><i aria-hidden="true" class="slide-menu fa fa-bars" title="Menu"></i>
+            <span class="sr-only">Menu</span>
+         </label>
+         <input type="checkbox" id="toggle" name="toggle">
+         <ul class="secondary-nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">About</a></li>
+            <li><a href="">Reserve</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./blog.html">Contact</a></li>
+            <li><a href=""></a><i aria-hidden="true" class="fas fa-search" title="Search"></i></li>
+            <span class="sr-only">Search</span>
+            <li><a href=""></a><i aria-hidden="true" class="fas fa-shopping-bag" title="Shopping Cart"></i></li>
+            <span class="sr-only">Shopping Cart</span>
+         </ul>
+      
+      </nav>
+      
       <header class="island">
       
       </header>
@@ -41,7 +62,7 @@
 
             <div class="blog-info">
             <div class="blog-profile">
-               <img class="blog-img1" src="../sunshineAssets/blog-2.jpeg" alt="">
+               <img class="blog-img1" src="../sunshineAssets/blog-2.jpeg" alt="Picture of Alex Fergurson">
                <p class="blog-sub-header">Alex Fergurson<br><span class="grey">Admin</span> </p>
             </div>
 
@@ -72,10 +93,10 @@
 
             <div class="blog-social-icons">
                <p class="media-blog blog-sub-header">Share:</p>
-               <a href="#"><i class="fab media fa-twitter"></a></i> 
-               <a href="#"><i class="fab media fa-instagram"></a></i>
-               <a href="#"><i class="fab media fa-facebook-f"></a></i> 
-               <a href="#"><i class="fab media fa-google-plus-g"></a></i>
+               <a href="#"><i aria-hidden="true" title="Twitter" class="fab media fa-twitter"></a></i> 
+               <a href="#"><i aria-hidden="true" title="Instagram" class="fab media fa-instagram"></a></i>
+               <a href="#"><i aria-hidden="true" title="Facebook" class="fab media fa-facebook-f"></a></i> 
+               <a href="#"><i aria-hidden="true" title="Google Plus" class="fab media fa-google-plus-g"></a></i>
 
             </div>
          </article>
@@ -165,20 +186,20 @@
       <section class="footer-content wrapper">
          <div class="footer-one">
             <ul>
-               <li>Site Map</li>
-               <li>Term & Conditions</li>
-               <li>Privacy Policy</li>
-               <li>Help</li>
-               <li>Affiliate</li>
+               <li><a href="#">Site Map</a></li>
+               <li><a href="#">Term & Conditions</a></li>
+               <li><a href="#">Privacy Policy</a></li>
+               <li><a href="#">Help</a></li>
+               <li><a href="#">Affiliate</a></li>
             </ul>
          </div>
-   
+         
          <div class="footer-two">
             <ul>
-               <li>FAQs</li>
-               <li>Blog</li>
-               <li>Location</li>
-               <li>Press</li>
+               <li><a href="#">FAQs</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Location</a></li>
+               <li><a href="#">Press</a></li>
             </ul>
          </div>
    
@@ -187,7 +208,10 @@
                <p class="p-footer">Sign up for our newsletter</p>
                <label for="email" class="visuallyHidden message">Email</label>
                <input class="place" type="email" type="email" id="email" name="email" placeholder="Your email">
-               <button class="button-image" type="submit"><i class="far fa-paper-plane"></i></button>
+               <button class="button-image" type="submit">
+                  <i class="far fa-paper-plane" title="Submit button"></i>
+                  <span class="sr-only">Submit button</span>
+               </button>
             </form>
    
          </div>
