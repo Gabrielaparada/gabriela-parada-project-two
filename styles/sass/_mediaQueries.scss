@@ -33,6 +33,9 @@
 
 }
 
+
+
+
 @media (max-width: 900px) {
 
    .surfer{
@@ -101,6 +104,16 @@
       width: 55%;
       margin-top: 30px
    }
+
+.post-img1:hover,
+.post-img2:hover,
+.post-img3:hover{
+   width: 55%;
+   -webkit-box-shadow: 7px 15px 19px -17px rgba(0,0,0,0.66);
+   -moz-box-shadow: 7px 15px 19px -17px rgba(0,0,0,0.66);
+   box-shadow: 7px 15px 19px -17px rgba(0,0,0,0.66);
+   transition: all 0.5s;
+}
 
    .island{
       background-position-x: -170px;
@@ -406,6 +419,16 @@
    .post-img3{
       width: 76%;
    }
+
+   .post-img1:hover,
+.post-img2:hover,
+.post-img3:hover{
+   width: 76%;
+   -webkit-box-shadow: 7px 15px 19px -17px rgba(0,0,0,0.66);
+   -moz-box-shadow: 7px 15px 19px -17px rgba(0,0,0,0.66);
+   box-shadow: 7px 15px 19px -17px rgba(0,0,0,0.66);
+   transition: all 0.5s;
+}
 
    .blog-title{
       font-size: 1.7rem;

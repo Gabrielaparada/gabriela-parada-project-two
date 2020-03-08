@@ -113,6 +113,16 @@
    justify-content: space-around;
 }
 
+.post-img1:hover,
+.post-img2:hover,
+.post-img3:hover {
+   width: 31%;
+   -webkit-box-shadow: 7px 15px 19px -17px rgba(0,0,0,0.66);
+   -moz-box-shadow: 7px 15px 19px -17px rgba(0,0,0,0.66);
+   box-shadow: 7px 15px 19px -17px rgba(0,0,0,0.66);
+   transition: all 0.5s;
+}
+
 .post-img1{
    margin-left: 20px;
 }
@@ -173,6 +183,35 @@
 .contact-page-form {
    margin-top: 37px;
 }
+
+.contact-button-blog{
+   margin:0;
+   padding:15px 20px;
+   background-color:#84A016;
+   width: 30%;
+   color:white;
+   text-transform: uppercase;
+   margin-bottom: 30px;
+   margin-top:25px;
+   font-family: "Poppins";
+   font-size: 0.9rem;
+}
+.contact-button-blog:hover{
+   color:black;
+}
+
+textarea {
+   width: 97%;
+   color: #999999;
+   border: none;
+   resize: none;
+   font-family: "Poppins";
+   font-size: 0.7rem;
+   border-bottom: 1px solid #999999;
+}
+
+
+
 
 .tip {
    width: 0px;

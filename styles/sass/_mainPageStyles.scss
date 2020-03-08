@@ -74,22 +74,24 @@ header {
    text-transform: uppercase;
 }
 
+.nav a:hover{
+   color:#999999;
+}
+
 /*secondary nav*/
 .hamburger-nav{
    display:none;
 }
-.secondary-nav{
 
+.secondary-nav{
    position: relative;
-   // right: -143px;
-   // top:0;
    background:transparent;
-	position: fixed;
-	z-index: 10;
-	width: 40%; /*note how width and right are the same values*/
-	right: -40%; /* Off the screen as wide as you are */
-	top: 96px;
-	height: 100%;
+   position: fixed;
+   z-index: 10;
+   width: 40%; 
+   right: -40%; 
+   top: 96px;
+   height: 100%;
    transition: all 0.5s;
    text-align: center;
 }
@@ -103,23 +105,25 @@ header {
    font-size: 2rem;
    margin-top:11px;
 }
+
 .secondary-nav a{
    border-bottom: 1px solid grey;
-	display: inline-block;
-	font-size: 40px;
-	width: 100%;
-	padding: 20px;
-	transition: all 0.3s;
+   display: inline-block;
+   font-size: 40px;
+   width: 100%;
+   padding: 20px;
+   transition: all 0.3s;
 }
 
 ul.secondary-nav a:hover,
-ul.secondary-nav a:focus {
-	background: #3498db;
-}
+   ul.secondary-nav a:focus {
+   background: #3498db;
+   }
 
 input[type="checkbox"]:checked + ul.secondary-nav {
-	right: 0;  /*when the checkbox is checked, put the ul.nav back to right: 0; It was at right:-30%;*/
+   right: 0;  
 }
+
 input[type="checkbox"] {
    display: none; 
    position: absolute;
@@ -127,16 +131,14 @@ input[type="checkbox"] {
    top: -64px; 
 }
 
-label[for="toggle"] {
-	/*position the menu so that it doesn't slide off screen when we open it*/
-	position: fixed;
-	top: 10px;
-	left: 10px;
-	color: black;
+   label[for="toggle"] {
+   position: fixed;
+   top: 10px;
+   left: 10px;
+   color: black;
    z-index: 10;
    margin-left: 20px;
    padding-left: 0;
-   
 }
 
 .secondary-nav a{
@@ -276,7 +278,6 @@ main .sub-header {
    margin-bottom: 28px;
 }
 
-
 .review {
    font-style: italic;
    font-size: 1rem;
@@ -310,6 +311,12 @@ main .sub-header {
    left: -45px;
    top: 49%;
    font-size: 2.3rem;
+}
+
+.chevron-l:hover,
+.chevron-r:hover{
+   color:#999999;
+
 }
 
 .grey {
@@ -421,6 +428,12 @@ input[type="email"] {
    padding: 7px;
 }
 
+.footer-content a:hover,
+button i:hover{
+   color:#EDEDED;
+
+}
+
 .footer-content {
    display: flex;
    padding-top: 70px;
@@ -499,7 +512,6 @@ textarea {
    color: #999999;
    border: none;
    resize: none;
-   margin-left: 18px;
    font-family: "Poppins";
    font-size: 0.7rem;
 }

@@ -406,6 +406,10 @@ header {
   text-transform: uppercase;
 }
 
+.nav a:hover {
+  color: #999999;
+}
+
 /*secondary nav*/
 .hamburger-nav {
   display: none;
@@ -417,9 +421,7 @@ header {
   position: fixed;
   z-index: 10;
   width: 40%;
-  /*note how width and right are the same values*/
   right: -40%;
-  /* Off the screen as wide as you are */
   top: 96px;
   height: 100%;
   -webkit-transition: all 0.5s;
@@ -454,7 +456,6 @@ ul.secondary-nav a:focus {
 
 input[type="checkbox"]:checked + ul.secondary-nav {
   right: 0;
-  /*when the checkbox is checked, put the ul.nav back to right: 0; It was at right:-30%;*/
 }
 
 input[type="checkbox"] {
@@ -465,7 +466,6 @@ input[type="checkbox"] {
 }
 
 label[for="toggle"] {
-  /*position the menu so that it doesn't slide off screen when we open it*/
   position: fixed;
   top: 10px;
   left: 10px;
@@ -665,6 +665,11 @@ main .sub-header {
   font-size: 2.3rem;
 }
 
+.chevron-l:hover,
+.chevron-r:hover {
+  color: #999999;
+}
+
 .grey {
   color: #cccccc;
   font-weight: 400;
@@ -782,6 +787,11 @@ input[type="email"] {
   padding: 7px;
 }
 
+.footer-content a:hover,
+button i:hover {
+  color: #EDEDED;
+}
+
 .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -869,7 +879,6 @@ textarea {
   color: #999999;
   border: none;
   resize: none;
-  margin-left: 18px;
   font-family: "Poppins";
   font-size: 0.7rem;
 }
@@ -1010,6 +1019,16 @@ textarea {
       justify-content: space-around;
 }
 
+.post-img1:hover,
+.post-img2:hover,
+.post-img3:hover {
+  width: 31%;
+  -webkit-box-shadow: 7px 15px 19px -17px rgba(0, 0, 0, 0.66);
+  box-shadow: 7px 15px 19px -17px rgba(0, 0, 0, 0.66);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .post-img1 {
   margin-left: 20px;
 }
@@ -1070,6 +1089,33 @@ textarea {
 
 .contact-page-form {
   margin-top: 37px;
+}
+
+.contact-button-blog {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #84A016;
+  width: 30%;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  font-family: "Poppins";
+  font-size: 0.9rem;
+}
+
+.contact-button-blog:hover {
+  color: black;
+}
+
+textarea {
+  width: 97%;
+  color: #999999;
+  border: none;
+  resize: none;
+  font-family: "Poppins";
+  font-size: 0.7rem;
+  border-bottom: 1px solid #999999;
 }
 
 .tip {
@@ -1230,6 +1276,10 @@ input {
   font-weight: bold;
 }
 
+.contact-button:hover {
+  color: #999999;
+}
+
 input[type="text"] {
   font-size: 0.7rem;
 }
@@ -1319,6 +1369,15 @@ input[type="text"] {
     margin: 0 auto;
     width: 55%;
     margin-top: 30px;
+  }
+  .post-img1:hover,
+  .post-img2:hover,
+  .post-img3:hover {
+    width: 55%;
+    -webkit-box-shadow: 7px 15px 19px -17px rgba(0, 0, 0, 0.66);
+    box-shadow: 7px 15px 19px -17px rgba(0, 0, 0, 0.66);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .island {
     background-position-x: -170px;
@@ -1566,6 +1625,15 @@ input[type="text"] {
   .post-img2,
   .post-img3 {
     width: 76%;
+  }
+  .post-img1:hover,
+  .post-img2:hover,
+  .post-img3:hover {
+    width: 76%;
+    -webkit-box-shadow: 7px 15px 19px -17px rgba(0, 0, 0, 0.66);
+    box-shadow: 7px 15px 19px -17px rgba(0, 0, 0, 0.66);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .blog-title {
     font-size: 1.7rem;
