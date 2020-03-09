@@ -470,7 +470,7 @@ header {
 
 ul.secondary-nav a:hover,
 ul.secondary-nav a:focus {
-  background: #3498db;
+  background: #A4F1DC;
 }
 
 input[type="checkbox"]:checked + ul.secondary-nav {
@@ -500,6 +500,12 @@ label[for="toggle"] {
 }
 
 /*about with portrait image*/
+.about-line {
+  border-bottom: 1px solid black;
+  width: 51px;
+  margin-bottom: 10px;
+}
+
 .main-main-page {
   background-color: #ededed;
   padding-bottom: 180px;
@@ -536,11 +542,6 @@ main .sub-header {
   width: 42%;
   bottom: -64px;
   left: -20%;
-}
-
-.about-break {
-  width: 10%;
-  margin: 0 0 19px 8px;
 }
 
 .about-content {
@@ -1269,6 +1270,12 @@ h5 {
   color: black;
 }
 
+.right-break,
+.right-break-two {
+  border-right: 1px solid #EDEDED;
+  height: 120px;
+}
+
 .contact-details i {
   font-size: 1.7rem;
   margin-bottom: 15px;
@@ -1358,6 +1365,9 @@ input[type="text"] {
 }
 
 @media (max-width: 900px) {
+  .about-line {
+    display: none;
+  }
   .beach {
     background-position-x: -369px;
     -webkit-transition: all 0.5s;
@@ -1718,6 +1728,10 @@ input[type="text"] {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
+  .right-break,
+  .right-break-two {
+    display: none;
+  }
 }
 
 @media (max-width: 497px) {
@@ -1727,8 +1741,8 @@ input[type="text"] {
     transition: all 0.5s;
   }
   .secondary-nav {
-    width: 53%;
-    right: -53%;
+    width: 63%;
+    right: -63%;
   }
   .about-content h2 {
     font-size: 1.7rem;
@@ -1770,6 +1784,9 @@ input[type="text"] {
 }
 
 @media (max-width: 416px) {
+  .gallery h2 {
+    font-size: 2.5rem;
+  }
   nav .titles {
     margin-right: 74px;
     margin-left: 0;

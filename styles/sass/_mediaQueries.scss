@@ -37,6 +37,9 @@
 
 
 @media (max-width: 900px) {
+   .about-line{
+      display:none;
+   }
 
    .beach{
       background-position-x: -369px;
@@ -215,12 +218,10 @@
    .p-footer{
       margin-bottom:6px
    }
-
-
-
 }
 
 @media (max-width: 663px) {
+
 
    .island{
       background-position-x: -338px;
@@ -483,6 +484,11 @@
       transition: all 0.5s;
    }
 
+   .right-break,
+   .right-break-two{
+      display:none;
+   }
+
 }
 
 @media (max-width: 497px) {
@@ -493,8 +499,8 @@
    }
 
    .secondary-nav{
-      width: 53%;
-      right: -53%;
+      width: 63%;
+      right: -63%;
    }
 
    .about-content h2 {
@@ -548,6 +554,10 @@
 
 
    @media (max-width: 416px) {
+
+   .gallery h2{
+      font-size: 2.5rem;
+   }
 
    nav .titles{
       margin-right: 74px;
