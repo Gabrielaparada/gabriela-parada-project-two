@@ -38,6 +38,25 @@ header {
    height: 90vh;
    width: 100%;
 }
+.shopping{
+   position: relative;
+}
+
+.items-in-cart{
+   padding-top: 2px;
+   text-align: center;
+   background-color:#A4F1DC ;
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   font-family: "Poppins";
+   font-weight: bold;
+   font-size: 0.4rem;
+   position:absolute;
+   right: -7px;
+   bottom: 45px;
+}
+
 
 .island {
    background-image: url(../sunshineAssets/blog-1.jpeg);
@@ -505,13 +524,4 @@ input[placeholder="Your email"]{
 .footer-one a,
 .footer-two a{
    color:#999999;
-}
-
-textarea {
-   width: 100%;
-   color: #999999;
-   border: none;
-   resize: none;
-   font-family: "Poppins";
-   font-size: 0.7rem;
 }

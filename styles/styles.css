@@ -369,6 +369,25 @@ header {
   width: 100%;
 }
 
+.shopping {
+  position: relative;
+}
+
+.items-in-cart {
+  padding-top: 2px;
+  text-align: center;
+  background-color: #A4F1DC;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 0.4rem;
+  position: absolute;
+  right: -7px;
+  bottom: 45px;
+}
+
 .island {
   background-image: url(../sunshineAssets/blog-1.jpeg);
   background-size: cover;
@@ -874,13 +893,19 @@ input[placeholder="Your email"] {
   color: #999999;
 }
 
-textarea {
-  width: 100%;
-  color: #999999;
-  border: none;
-  resize: none;
+.items-in-cart-blog {
+  padding-top: 2px;
+  text-align: center;
+  background-color: #A4F1DC;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
   font-family: "Poppins";
-  font-size: 0.7rem;
+  font-weight: bold;
+  font-size: 0.4rem;
+  position: absolute;
+  right: -7px;
+  bottom: 44px;
 }
 
 .blog-title {
@@ -1185,6 +1210,21 @@ textarea {
   padding-top: 14px;
 }
 
+.items-in-cart-contact {
+  padding-top: 2px;
+  text-align: center;
+  background-color: #A4F1DC;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 0.4rem;
+  position: absolute;
+  right: -7px;
+  bottom: 45px;
+}
+
 .titles-contact-page {
   font-size: 2rem;
 }
@@ -1318,10 +1358,15 @@ input[type="text"] {
 }
 
 @media (max-width: 900px) {
+  .beach {
+    background-position-x: -369px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
   .surfer {
-    background-position-x: -134px;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
+    background-position-x: -269px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .about-flex {
     display: inline;
@@ -1379,11 +1424,6 @@ input[type="text"] {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
-  .island {
-    background-position-x: -170px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
   .blog-profile {
     display: block;
   }
@@ -1392,13 +1432,21 @@ input[type="text"] {
     margin: 0 auto;
     margin-top: 5px;
   }
+  .contact-button-blog {
+    width: 36%;
+  }
 }
 
 @media (max-width: 776px) {
+  .island {
+    background-position-x: -208px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
   .surfer {
-    background-position-x: -279px;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
+    background-position-x: -379px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .section2-image {
     -webkit-box-flex: 0;
@@ -1427,9 +1475,6 @@ input[type="text"] {
   .blog-break {
     width: 77%;
   }
-  .island {
-    background-position-x: -350px;
-  }
   fieldset {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1449,9 +1494,26 @@ input[type="text"] {
   .blog-title {
     width: 50%;
   }
+  .button-image {
+    right: -12px;
+    top: 18px;
+  }
+  .p-footer {
+    margin-bottom: 6px;
+  }
 }
 
 @media (max-width: 663px) {
+  .island {
+    background-position-x: -338px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .beach {
+    background-position-x: -500px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
   .nav .titles {
     padding: 20px 0;
   }
@@ -1639,20 +1701,35 @@ input[type="text"] {
     font-size: 1.7rem;
     width: 77%;
   }
-  .island {
-    background-position-x: -430px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
   nav .titles {
     padding: 26px 0 26px 0;
   }
   .hamburger-nav {
     display: inline-block;
   }
+  .contact-button-blog {
+    width: 70%;
+  }
+  textarea {
+    margin-left: 23px;
+  }
+  .surfer {
+    background-position-x: -576px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
 }
 
 @media (max-width: 497px) {
+  .beach {
+    background-position-x: -670px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .secondary-nav {
+    width: 53%;
+    right: -53%;
+  }
   .about-content h2 {
     font-size: 1.7rem;
   }
@@ -1674,11 +1751,6 @@ input[type="text"] {
     width: 74%;
     margin-left: 39px;
   }
-  .surfer {
-    background-position-x: -509px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
   .main-blog {
     width: 90%;
     left: 5%;
@@ -1698,11 +1770,6 @@ input[type="text"] {
 }
 
 @media (max-width: 416px) {
-  .surfer {
-    background-position-x: -601px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-  }
   nav .titles {
     margin-right: 74px;
     margin-left: 0;
@@ -1715,7 +1782,7 @@ input[type="text"] {
   }
   .about-content h2 {
     font-size: 1.4rem;
-    padding-top: 13px;
+    padding-top: 43px;
   }
   .about-content p {
     font-size: 0.9rem;
@@ -1746,7 +1813,16 @@ input[type="text"] {
     margin: 18px 0 18px 0;
   }
   .island {
-    background-position-x: -532px;
+    background-position-x: -432px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .chevron-r,
+  .chevron-l {
+    font-size: 1.7rem;
+  }
+  .surfer {
+    background-position-x: -653px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
