@@ -1331,6 +1331,14 @@ input[type="text"] {
   font-size: 0.7rem;
 }
 
+.contact-background-two {
+  background-image: url(../sunshineAssets/contact-2.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+}
+
 @media (max-width: 1111px) {
   .package {
     padding: 110px 40px 40px;
@@ -1448,6 +1456,11 @@ input[type="text"] {
 }
 
 @media (max-width: 776px) {
+  .contact-background-two {
+    background-position-x: -133px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
   .island {
     background-position-x: -208px;
     -webkit-transition: all 0.5s;
@@ -1673,6 +1686,11 @@ input[type="text"] {
     text-align: center;
     margin: 0 auto;
   }
+  .contact-background-two {
+    background-position-x: -204px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
   .dialogbox .body {
     width: 78%;
     height: 105px;
@@ -1781,6 +1799,12 @@ input[type="text"] {
     font-size: 2rem;
     left: 3px;
   }
+  .contact-background-two {
+    background-position-x: -300px;
+    margin-top: 12px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
 }
 
 @media (max-width: 416px) {
@@ -1840,6 +1864,11 @@ input[type="text"] {
   }
   .surfer {
     background-position-x: -653px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .contact-background-two {
+    background-position-x: -386px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }

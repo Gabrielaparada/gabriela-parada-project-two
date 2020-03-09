@@ -142,6 +142,11 @@
 
 @media (max-width: 776px) {
 
+   .contact-background-two{
+      background-position-x: -133px;
+      transition: all 0.5s;
+   }
+
    .island{
       background-position-x: -208px;
       transition: all 0.5s
@@ -417,6 +422,12 @@
       margin: 0 auto;
    }
 
+   .contact-background-two{
+      background-position-x: -204px;
+      transition: all 0.5s;
+   }
+
+
    .dialogbox .body{
       width: 78%;
       height: 105px;
@@ -550,6 +561,13 @@
       left:3px;
    }
 
+      .contact-background-two{
+      background-position-x: -300px;
+      margin-top: 12px;
+      transition: all 0.5s;
+   }
+
+
 }
 
 
@@ -622,5 +640,11 @@
       background-position-x: -653px;
       transition: all 0.5s;
    }
+
+   .contact-background-two{
+      background-position-x: -386px;
+      transition: all 0.5s;
+   }
+
 
 }
