@@ -436,12 +436,12 @@ header {
 
 .secondary-nav {
   position: relative;
-  background: transparent;
+  background: white;
   position: fixed;
   z-index: 10;
   width: 40%;
   right: -40%;
-  top: 96px;
+  top: 0;
   height: 100%;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -1759,8 +1759,8 @@ input[type="text"] {
     transition: all 0.5s;
   }
   .secondary-nav {
-    width: 63%;
-    right: -63%;
+    width: 68%;
+    right: -69%;
   }
   .about-content h2 {
     font-size: 1.7rem;
